@@ -12,14 +12,14 @@ const Product = () => {
     dispatch(fetchProducts())
   }, [dispatch])
   return (
-    <div>
+    <div className='row'>
       {loading ? (
         <div>loading...</div>
       ) : error ? (
         <div>{error}</div>
       ) : (
-        products.result?.manufacturers.map((product) => (
-          <Card product={product} />
+        products?.result?.manufacturers.map((product, idx) => (
+          <Card product={product} key={idx}/>
         ))
       )}
     </div>

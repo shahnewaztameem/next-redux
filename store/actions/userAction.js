@@ -11,22 +11,22 @@ export const login = (email, password) => async (dispatch) => {
       type: types.USER_LOGIN_REQUEST,
     })
 
-    // const config = {
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    // }
+    const config = {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }
 
     const { data } = await axios.post(
       'https://devapi.dhakai.com/api/v2/login-buyer',
       {
         auth: {
           email,
-          deviceUuid: deviceUuid,
+          deviceUuid: '1213sdsfs456sdsd778sds87787dsd',
         },
         password,
-      }
-      // config
+      },
+      config
     )
     if (data.statusCode === 400) {
       dispatch({
@@ -44,7 +44,7 @@ export const login = (email, password) => async (dispatch) => {
       }
     }
 
-    console.log(data.message)
+    console.log(deviceUuid)
   } catch (error) {
     dispatch({
       type: types.USER_LOGIN_FAIL,

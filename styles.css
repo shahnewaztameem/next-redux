@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+}
+
+.bottom-btn {
+  position: absolute;
+  bottom: 15px;
+  padding: 8px 20px 8px 22px;
+  border-radius: 16px;
+  background-color: #d1ffd0;
+  border: none;
+  text-align: center;
+  color: #01896a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cb {
+  height: 180px;
+}
+
+.card {
+  border: none;
+}
+
+.mqty {
+  color: #01896a;
+}
+
+.card-body {
+  font-size: 14px;
+  color: #63636a;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2a2a2e;
+}
